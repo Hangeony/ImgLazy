@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .blur-up {
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      transition: filter 400ms, -webkit-filter 400ms;
+    }
+
+    .blur-up.lazyloaded {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+  </style>
+
+<body>
+    <div id="app"></div>
+
+    <script src="src/index.js">
+    </script>
+</body>
+
+</html>
